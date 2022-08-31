@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	height: 100vh;
+	background-color: #d0cefe;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+h1{
+	color: #363471;
+}
+.container{
+	height: 400px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.box{
+	
+	align-items: center;
+	display: flex;	
+	text-align: center;
+	justify-content: space-between;
+	flex-direction: column;
+	
+}
+
+input{
+width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	outline: none;
+	border: 2px solid #d2d2d2;
+	padding: 0 10px;
+	}
+
+
+
+
+#btn-reverse {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#btn-reverse:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+#btn-reverse:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+#displayReversed{
+	margin-top: 20px;
+	font-size: 20px;
+	background-color: #bebcfb;
+	width: 300px;
+	height: 200px;
+	align-items: center;
+	display: flex;	
+	justify-content:center;
+
+}
